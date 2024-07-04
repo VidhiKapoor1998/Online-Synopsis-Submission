@@ -1,0 +1,183 @@
+@charset "UTF-8";
+ <style>
+       
+       
+       
+        body {
+			
+            margin: 0;
+            padding: 0;
+            font-family: "gothammedium";
+            max-width:1170px;
+            box-sizing: border-box;
+          
+            }
+
+		
+		#name{
+			font-family: "gothammedium";
+			color: rgb(26,49,67);
+			padding: 10px 0 0 7px;
+			font-size: 26px;
+   			font-weight: bold;
+		}
+		
+		#tagLine{
+			color:antiquewhite;
+			font-weight: bolder;
+		}
+		
+		.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+		    margin-top: 0px;
+		    margin-bottom:0px;
+	    }
+	    
+	    
+		ul,li{
+			margin-bottom: 20px;
+			padding: 0px;
+			color: rgb(26,49,67);
+		}
+		
+		
+        header {
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            min-width: 100%;
+            position: absolute;
+           
+        }
+        
+      
+        #div1_1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 0;
+            padding: 0 0;
+            width: 100%;
+           	
+           
+        }
+        
+        #logo{
+			margin-top: 0px;
+			width: 100px;
+			height:100px;
+			align-content: center;
+		}
+
+        #subDiv1_1 {
+			background-color: rgba(100, 158, 51,0.5) ;
+           	padding-top: 5px;
+           	padding-bottom: -3px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            color:rgb(145,34,16) ;
+            
+        }
+
+        #subDiv1_2 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        #subDiv1_2_1, #subDiv1_2_2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #subDiv1_2_1_1, #subDiv1_2_1_2 {
+            margin-bottom: 5px;
+        }
+
+        nav {
+            padding: 10px;
+        }
+
+		 nav a {
+	      float: left;
+	      display: block;
+	      color: rgb(26,49,67);;
+	      text-align: center;
+	      padding: 10px 20px;
+	      text-decoration: none;
+	      font-weight: bold;
+	      
+	    }
+	    
+	    nav a:hover{
+			color:rgb(146,34,16) ;
+			font-weight: bolder;
+		}
+
+   		
+		    
+		  #hero_section {
+		      background-image: url("Gallery/zhanhui-li-1iuxWsIZ6ko-unsplash.jpg"); 
+		      background-attachment: fixed;
+		      background-repeat: no-repeat;
+		      background-size: cover;
+		      background-position: center;
+		      text-align: center;
+		      padding: 220px 410px;
+		      box-sizing: border-box;
+		      height: 700px;
+		    }
+		    
+		    #quote{
+				font-family: "gothammedium";
+				font-size: 45px;
+				color:antiquewhite;
+				background-color: #00000060;
+				padding: 20px 0;
+			}
+		    
+		    #heading{
+				font-family: "gothammedium";
+				color: white;
+				font-weight:bold;
+				font-size: 30px;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			
+			#description{
+				font-size: 25px;
+				text-align: center;
+				color: rgba(27, 38, 49,0.8);
+				font-weight: 600;
+				
+				padding-bottom: 80px;
+				margin: 0px;
+			}
+			
+			#spacer{
+				margin: 0 220px;
+				border-bottom: 2px solid rgba(93, 109, 126) ;
+			}
+			
+			
+			 #information{
+		
+            display: flex;
+            flex-direction: row;
+        }
+        #section {
+            padding: 80px 80px 0 80px;
+            background-color: #F4F6F7 !important;
+            
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>

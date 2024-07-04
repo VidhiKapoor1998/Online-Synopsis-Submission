@@ -1,0 +1,169 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+ 
+  <filter>
+  	<filter-name>NoCacheFilter</filter-name>
+  	<display-name>NoCacheFilter</display-name>
+  	<description></description>
+  	<filter-class>com.university.NoCacheFilter</filter-class>
+  </filter>
+ 
+  <filter-mapping>
+  	<filter-name>NoCacheFilter</filter-name>
+  	<url-pattern>/OnlineSynopsisSubmission/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>StudentLogin</servlet-name>
+  	<display-name>StudentLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.university.student.controller.StudentLogin</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>WelcomeStudent</servlet-name>
+  	<display-name>WelcomeStudent</display-name>
+  	<description></description>
+  	<servlet-class>com.university.student.controller.WelcomeStudent</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FacultyLogin</servlet-name>
+  	<display-name>FacultyLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.university.faculty.controller.FacultyLogin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminLogin</servlet-name>
+  	<display-name>AdminLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.university.admin.controller.AdminLogin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WelcomeFaculty</servlet-name>
+  	<display-name>WelcomeFaculty</display-name>
+  	<description></description>
+  	<servlet-class>com.university.faculty.controller.WelcomeFaculty</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WelcomeAdmin</servlet-name>
+  	<display-name>WelcomeAdmin</display-name>
+  	<description></description>
+  	<servlet-class>com.university.admin.controller.WelcomeAdmin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<display-name>WelcomeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.university.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UploadSynopsis</servlet-name>
+  	<display-name>UploadSynopsis</display-name>
+  	<description></description>
+  	<servlet-class>com.university.student.controller.UploadSynopsis</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ViewAllotedSynopsis</servlet-name>
+  	<display-name>ViewAllotedSynopsis</display-name>
+  	<description></description>
+  	<servlet-class>com.university.faculty.controller.ViewAllotedSynopsis</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AllotSynopsis</servlet-name>
+  	<display-name>AllotSynopsis</display-name>
+  	<description></description>
+  	<servlet-class>com.university.admin.controller.AllotSynopsis</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DownloadSynopsis</servlet-name>
+  	<display-name>DownloadSynopsis</display-name>
+  	<description></description>
+  	<servlet-class>com.university.faculty.controller.DownloadSynopsis</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateResult</servlet-name>
+  	<display-name>UpdateResult</display-name>
+  	<description></description>
+  	<servlet-class>com.university.faculty.controller.UpdateResult</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<display-name>Logout</display-name>
+  	<description></description>
+  	<servlet-class>com.university.Logout</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>viewStatus</servlet-name>
+  	<display-name>viewStatus</display-name>
+  	<description></description>
+  	<servlet-class>com.university.student.controller.viewStatus</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>StudentLogin</servlet-name>
+  	<url-pattern>/StudentLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeStudent</servlet-name>
+  	<url-pattern>/WelcomeStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FacultyLogin</servlet-name>
+  	<url-pattern>/FacultyLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminLogin</servlet-name>
+  	<url-pattern>/AdminLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeFaculty</servlet-name>
+  	<url-pattern>/WelcomeFaculty</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeAdmin</servlet-name>
+  	<url-pattern>/WelcomeAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<url-pattern>/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UploadSynopsis</servlet-name>
+  	<url-pattern>/UploadSynopsis</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewAllotedSynopsis</servlet-name>
+  	<url-pattern>/ViewAllotedSynopsis</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AllotSynopsis</servlet-name>
+  	<url-pattern>/AllotSynopsis</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DownloadSynopsis</servlet-name>
+  	<url-pattern>/DownloadSynopsis</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateResult</servlet-name>
+  	<url-pattern>/UpdateResult</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>viewStatus</servlet-name>
+  	<url-pattern>/viewStatus</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  <welcome-file-list>
+  	<welcome-file>UniversityHomePage.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
